@@ -13,6 +13,6 @@
   --title-decor-text: #000028;        /* Текст заголовков на цветном фоне */
   --border-color: #FF0070;            /* Цвет рамок и уголков */
   --hover-border-color: rgba(50, 49, 45, 0.4);  /* Цвет рамки при hover */
-  --rec-shadow: 0 0 4px 2px #FF0070;  /* Тень для кругляшка REC */
+  --rec-shadow: 0 0 4px 2px #FF0070;  /* Тень для кругляша REC */
   --bg-image: url(../images/cover-image-dark.png);  /* Фоновое изображение */
 }
