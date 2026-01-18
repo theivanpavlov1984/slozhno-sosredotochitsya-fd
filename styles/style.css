@@ -428,16 +428,18 @@
 
   .header__title {
     font-size: 157px;
+    font-weight: bold;
+    line-height: 0.825;
     position: absolute;
     inset-block-start: 319px;
-    inset-inline-start: 20px;
+    inset-inline-start: 0;
   }
 
   .header__subtitle {
     position: absolute;
     inset-block-end: 134px;
     inset-inline-end: 20px;
-    max-inline-size: 491px;
+    inline-size: 491px;
   }
 
   .content__section:nth-child(2) .content__cards-list {
