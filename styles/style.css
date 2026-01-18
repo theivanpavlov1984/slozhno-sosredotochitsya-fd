@@ -417,13 +417,14 @@
   .header__theme-menu {
     position: absolute;
     inset-block-start: 20px;
-    inset-inline-start: 50%;
-    transform: translateX(-50%);
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
-    justify-content: center;
   }
 
   .header__title {
