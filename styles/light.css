@@ -12,6 +12,7 @@
   --title-decor-bg: #FF8DCB;
   --title-decor-text: #353430;
   --border-color: #353430;
+  --hover-border-color: rgba(50, 49, 45, 0.4);
   --bg-image: url(../images/cover-image-light.png);
   --main-title-color: #FFC2E6;
 }
@@ -29,6 +30,7 @@
     --title-decor-bg: #FF8DCB;
     --title-decor-text: #353430;
     --border-color: #353430;
+    --hover-border-color: rgba(50, 49, 45, 0.4);
     --bg-image: url(../images/cover-image-light.png);
     --main-title-color: #FFC2E6;
   }

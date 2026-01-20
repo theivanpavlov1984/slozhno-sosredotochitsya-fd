@@ -16,7 +16,12 @@
   --title-decor-bg: #FF0070;
   --title-decor-text: #000028;
   --border-color: #FF0070;
-  --hover-border-color: rgba(50, 49, 45, 0.4);
+  --hover-border-color: rgba(255, 0, 112, 0.4);
   --rec-shadow: 0 0 4px 2px #FF0070;
   --bg-image: url(../images/cover-image-dark.png);
+  --main-title-color: #DB00FF;
+}
+
+:root.theme-dark .header__rec {
+  display: inline-flex;
 }

@@ -54,8 +54,8 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  min-block-size: 668px;
   block-size: 100vh;
+  min-block-size: 668px;
   padding: 10px;
   position: relative;
 }
@@ -238,8 +238,8 @@
 .footer {
   display: grid;
   place-items: center;
-  min-block-size: 668px;
   block-size: 100vh;
+  min-block-size: 668px;
   padding: 10px;
 }
 
@@ -271,7 +271,8 @@
 
   .header {
     padding: 20px;
-    grid-template-rows: 192px 1fr 203px;
+    position: relative;
+    min-block-size: 1024px;
   }
 
   .header__rec {
@@ -281,7 +282,6 @@
 
   .header__theme-menu {
     justify-self: end;
-    align-self: start;
   }
 
   .header__theme-menu-list {
@@ -289,15 +289,15 @@
   }
 
   .header__title {
-    align-self: center;
+    justify-self: start;
     font-size: 120px;
     line-height: 0.825;
     margin: 0;
+    margin-inline-start: -20px; /* Прижимаем к левому краю */
   }
 
   .header__subtitle {
     justify-self: end;
-    align-self: end;
     inline-size: 364px;
   }
 
@@ -331,18 +331,12 @@
   }
 
   .content__section_how {
-    grid-template-columns: 236px 472px;
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
 
   .content__section_how .content__section-title {
-    inline-size: 236px;
-    max-inline-size: 236px;
     line-height: 1.3;
-  }
-
-  .content__section_how .content__cards-wrapper {
-    inline-size: 472px;
   }
 
   .content__gallery {
@@ -382,6 +376,7 @@
 
   .footer {
     padding: 20px;
+    min-block-size: 1024px;
   }
 }
 
@@ -389,12 +384,14 @@
 @media (min-width: 1024px) {
   .header {
     padding: 20px;
-    grid-template-rows: 20px 1fr 154px;
+    grid-template-rows: min-content 1fr min-content;
+    min-block-size: 768px;
   }
 
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    grid-row: 1;
   }
 
   .header__theme-menu-list {
@@ -403,15 +400,16 @@
 
   .header__title {
     font-size: 157px;
-    font-weight: bold;
     line-height: 0.825;
+    grid-row: 2;
     align-self: center;
-    margin-block-start: -20px;
+    justify-self: start;
+    margin-inline-start: -20px; /* Прижимаем к левому краю в десктопе */
   }
 
   .header__subtitle {
+    grid-row: 3;
     justify-self: end;
-    align-self: end;
     inline-size: 491px;
   }
 
@@ -426,24 +424,15 @@
   }
 
   .content__section_how {
-    grid-template-columns: 315px 649px;
-    gap: 20px;
-  }
-
-  .content__section_how .content__cards-list {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr 2fr;
   }
 
   .content__section_how .content__section-title {
-    inline-size: 315px;
     line-height: 1.33;
   }
 
-  .content__section_how .content__cards-wrapper {
-    inline-size: 649px;
+  .footer {
+    min-block-size: 768px;
   }
 
   .footer__title {
